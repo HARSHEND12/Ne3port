@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Project Container</title>
+    <link rel="javascipt" href="projs.js">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: url("newbg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1{
+            color: aquamarine;
+            text-align: center;
+            text-decoration: underline;
+        }
+        .projects{
+            display:flex;
+            flex-wrap: wrap;
+            margin: 10px 0;
+            flex-direction: column;
+        }
+        #pg1{
+            border: 3px solid gray;
+            border-radius: 15%;
+            text-align: center;
+            padding: 25px;
+            margin: 2px;
+        }
+        #pg2{
+            border: 3px solid gray;
+            border-radius: 15%;
+            text-align: center;
+            padding: 25px;
+            margin: 2px;
+
+        }
+
+        #pg1 a:hover {
+            text-decoration: none;
+            background-color: #f0f0f0;
+            transition: all;
+            scale: 1.2px;
+            background-color: burlywood;
+        }
+        #pg2 a:hover{
+            background-color: #f0f0f0;
+            transition: all;
+            scale: 1.02;
+            animation: projects 2s  0.2s 1  ;
+        }
+        @keyframes projects {
+            from{
+                transform: scaleX(1.2px);
+            }
+            to{
+              transform: scaleX(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Coding Project Container</h1>
+<div class="projects">
+    <div id="pg1">
+        <a href="virtual mouse harsh.py">virtual mouse programming</a>
+    </div>
+    <div id="pg2">        
+       <a href="youtube pg1.py">youtube vedio downloader</a>
+    </div>
+</div>
+
+</body>
+</html>
